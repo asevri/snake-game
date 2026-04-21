@@ -1,9 +1,15 @@
 Prompt 1:
 I'm building a Snake game in Java using Swing. Create a single file called SnakeGame.java. It should have a main method that opens a JFrame window that is 600 by 600 pixels and titled Snake. Inside the frame, add a JPanel subclass called GamePanel. Do not add any game logic yet. Just get the window to open correctly.
+
 Evaluations(Eval): file was created and ran as expected without any errors.
 
 Prompt 2:
 Now extend SnakeGame.java. Keep it as one file. Add a dark background grid and draw a starting snake that is three segments long near the center of the board, facing right. Each cell should be a 30x30 pixel square. Draw the snake in green and the background in dark gray. Do not add movement yet.
+
 Eval: GamePanel class has been updated with the new grid and added green snake as expected, no errors so far
 
 Prompt 3:
+Make the snake move automatically using a Swing timer that ticks every 150 milliseconds. Add arrow key controls so the player can steer, but don't allow the snake to reverse direction. For now, have the snake wrap around the edges instead of dying. Make sure the panel can receive keyboard input.
+
+Eval: GamePanel class has been updated to include movement as expected. No errors so far.
+
