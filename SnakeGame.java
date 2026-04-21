@@ -78,21 +78,23 @@ public class SnakeGame {
         repaint();
     }
 
-    private void spawnFood() {
-        java.util.Set<Point> occupied = new java.util.HashSet<>(snake);
-        java.util.List<Point> empty = new java.util.ArrayList<>();
-        for (int x = 0; x < gridSize; x++) {
-            for (int y = 0; y < gridSize; y++) {
+private void spawnFood() {
+    java.util.Set<Point> occupied = new java.util.HashSet<>(snake);
+    java.util.List<Point> empty = new java.util.ArrayList<>();
+    for (int x = 0; x < gridSize; x++) {
+        for (int y = 0; y < gridSize; y++) {
+            if (x >= 0 && x < gridSize && y >= 0 && y < gridSize) { // ensure within bounds
                 Point p = new Point(x, y);
                 if (!occupied.contains(p)) empty.add(p);
             }
         }
-        if (empty.isEmpty()) {
-            food = null;
-            return;
-        }
-        food = empty.get(rand.nextInt(empty.size()));
     }
+    if (empty.isEmpty()) {
+        food = null;
+        return;
+    }
+    food = empty.get(rand.nextInt(empty.size()));
+}
 
     private void moveSnake() {
         if (gameOver) return;

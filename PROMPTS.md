@@ -19,3 +19,8 @@ Add a food pellet that spawns at a random empty cell. When the snake eats it, gr
 Eval: food pellets were added and the scoring worked but after 7 pallets were eaten an 8th one spawned right behind the edge of the screan. 
 
 Fix needed: make sure pellets are spawned only within the visible grid.
+
+Prompt 5:
+A food pellet spawned outside visible game window. Fix this to make sure pellets are spawned only within the game window. Do not make any other changes.
+
+Eval: Fixed the issue of pallets spawning outside of the screen.
