@@ -13,3 +13,9 @@ Make the snake move automatically using a Swing timer that ticks every 150 milli
 
 Eval: GamePanel class has been updated to include movement as expected. No errors so far.
 
+Prompt 4:
+Add a food pellet that spawns at a random empty cell. When the snake eats it, grow by one segment and spawn new food. Add collision detection: hitting a wall or the snake's own body should end the game, stop movement, and show a "Game Over" message with the final score. Display the current score in the top-left corner during play. When the game is over, let the player press R to reset everything and play again.
+
+Eval: food pellets were added and the scoring worked but after 7 pallets were eaten an 8th one spawned right behind the edge of the screan. 
+
+Fix needed: make sure pellets are spawned only within the visible grid.
