@@ -20,7 +20,7 @@ public class SnakeGame {
     private java.util.List<Point> snake;
     private final Color backgroundColor = new Color(30, 33, 40);
     private final Color gridColor = new Color(50, 53, 60);
-    private final Color snakeColor = Color.GREEN;
+    private final Color snakeColor = Color.BLUE;
     private final Color foodColor = Color.RED;
     private int dx = 1, dy = 0; // initial direction: right
     private int pendingDx = 1, pendingDy = 0; // for key input
